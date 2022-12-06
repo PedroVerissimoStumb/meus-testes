@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo/style.css">
+        <title>Cadastro de jogador</title>
+    </head>
+    <body>
+        <header>
+            <h1>Futebol</h1>
+        </header>
+        <main>
+            <h2>Crie sua conta de jogador profissional de futebol</h2>
+            <form action="cadastro.php" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Cadastro</legend>
+                    <p>
+                        <label for="inome">Nome: </label>
+                        <input type="text" name="nome" id="inome" autocomplete="name" placeholder="Nome do(a) senhor(a)" title="Nome do(a) senhor(a)" minlength="2" maxlength="14" required>
+                    </p>
+                    <p>
+                        <label for="isobrenome">Sobrenome: </label>
+                        <input type="text" name="sobrenome" id="isobrenome" autocomplete="name" minlength="2" maxlength="14" placeholder="Sobrenome do(a) sonhor(a)" title="Sobrenome do(a) sonhor(a)" required>
+                    </p>
+                    <p>
+                        <label for="inumero">Numero (tel): </label>
+                        <input type="tel" name="numero" id="inumero" placeholder="Seu numero de telefone" title="Seu numero de telefone" autocomplete="cc-number" class="number">
+                    </p>
+                    <p>
+                        <label for="iemail">Email: </label>
+                        <input type="email" name="email" id="iemail" placeholder="Seu email" title="Seu email" autocomplete="email" required>
+                    </p>
+                    <p>
+                        <label for="ireceber">Pretende receber (salário): </label>
+                        <input type="number" name="receber" id="ireceber" min="80000" max="100000000" placeholder="Pretendo receber..." class="receber" title="minimo de 80.000" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <p>
+                        <input type="radio" name="a1" id="ia1" value="M" checked> <label for="ia1">Masculino</label> <br>
+                        <input type="radio" name="a1" id="ia2" value="F"> <label for="ia2">Feminino</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Função</legend>
+                    <p>
+                        <label for="ifuncao">Sua função: </label>
+                        <input type="text" name="funcao" id="ifuncao" list="listdt" minlength="2" maxlength="20" placeholder="Atacante(Exemplo)" title="(Exemplo)Atacante" required>
+                    </p>
+                    <datalist id="listdt">
+                        <option value="att">Ataque</option>
+                        <option value="zag">Zagueiro</option>
+                        <option value="gol">Goleiro</option>
+                    </datalist>
+                </fieldset>
+                <p>
+                    <input type="submit" value="Enviar" class="envio"> <br>
+                    <input type="reset" value="Resetar" class="reseto">
+                </p>
+            </form>
+        </main>
+    </body>
+</html>
