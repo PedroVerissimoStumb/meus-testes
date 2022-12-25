@@ -8,6 +8,6 @@ function entrou() //onmouseenter
 
 function saiu() //onmouseout
 {
-    comercial.style.backgroundColor = 'lightray';
+    comercial.style.backgroundColor = 'lightgray';
     comercial.style.color = 'black';
 }

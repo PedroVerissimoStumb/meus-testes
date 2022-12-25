@@ -124,7 +124,7 @@ main > article > section#imagemCachorro
 
 main > article > div#comercial
 {
-    width: 95%;
+    width: 90%;
     max-width: 750px;
     height: 24vw;
     max-height: 150px;
@@ -134,16 +134,24 @@ main > article > div#comercial
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
+    padding: 0px 0px 10px 0px;
 }
 
-main > article > div#comercial > p
+main > article > div#comercial > pre
 {
     position: relative;
-    top: 50px;
+    top: 7vh;
     
+    margin: auto;
 }
 
-main > article > div#comercial > p > strong
+main > article > div#comercial > pre > strong
 {
-    color: #440080;
+    color: #5600a1;
+}
+
+main > article > p
+{
+    margin: auto;
+    width: 80%;
 }
