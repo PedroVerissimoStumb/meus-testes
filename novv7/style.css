@@ -6,7 +6,7 @@
     padding: 0px;
 }
 
-body, html
+html, body
 {
     width: 100%;
     height: 100%;
@@ -14,102 +14,136 @@ body, html
 
 header
 {
-    background-color: black;
+    background-color: rgb(68, 0, 128);
+    color: white;
+    width: 100%;
 }
 
-header > h1
+header > div
 {
-    text-align: center;
-    font-size: 50px;
-    color: white;
+    display: inline;
+}
+
+header > div > h1
+{
+    margin: 0px 10px;
+    font: 50px arial, sans-serif;
+    font-weight: bolder;
+}
+
+header > section > menu
+{
+    display: table;
+    position: relative;
+    margin: 10px auto;
+}
+
+header > section > menu > ul
+{
+    border: 2.5px solid rgba(159, 23, 244, 0.64);
+    border-radius: 10px;
+    width: 233px;
+    padding: 0px 2px 0px 0px;
+
+}
+
+header > section > menu > ul > li
+{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 3px 0px 3px;
+    margin-left: 1px;
+}
+
+header > section > menu > ul > li > a
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
-header > p
+header > section > menu > ul > li > a:hover
 {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
     color: white;
-    font-size: 25px;
+    text-decoration: none;
 }
 
-header > a > div#bordaBruna > img
+
+
+div > form > div.pesquisa
 {
-    width: 140px;
-    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.696);
+    width: 190px;
+    display: table;
+    text-align: right;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0.885);
+    border-radius: 10px 0px 0px 10px;
+    padding: 2px;
 }
 
-header > a > div#bordaBruna
+div > form > div.pesquisa > label
 {
-    margin: 10px 50%;
-    border: 15px groove rgb(0, 214, 0);
-    transform: translate(-50%, -2px);
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    animation-name: rodar;
-    animation-direction: normal;
-    animation-play-state: running;
-    animation-duration: 4s;
-    transition: 0.8s;
+    line-height: 5px;
 }
 
-header > a > div#bordaBruna:hover
+div > form > div.pesquisa > label > img.pequena
 {
-    border-color: rgb(0, 72, 144);
-    transition: 0.8s;
+    width: 13px;
 }
 
-/*************************/
+div > form > div.pesquisa > input
+{
+    height: 25px;
+    text-indent: 2px;
+    font-weight: 200;
+    font-size: 13px;
+}
 
 main
 {
-    width: 80%;
-    max-width: 745px;
-    margin: -10px auto;
-    background-color: rgb(145, 145, 30);
-    border-radius: 0px 0px 20px 20px;
-    padding: 10px;
-    box-shadow: 2px 0.5px 10px black;
+    margin: 25px auto 0px auto;
 }
 
-main > h2
-{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(90deg, blue, rgba(255, 0, 0, 0.638), transparent 90%);
-    margin: 10px 5px;
-    padding: 2.5px;
-}
-
-main > p
-{
-    color: white;
-}
-
-main > section#imgBruna
+main > article > section#imagemCachorro
 {
     background-color: transparent;
-    background-image: url('midia/bruna-main.jpg');
-    background-position: right bottom;
-    background-repeat: no-repeat;
+    background-image: url('midia/15048-como-tirar-foto-de-cachorro-aproveite-a-articles_media_mobile-2.jpg');
+    width: 95%;
+    max-width: 750px;
+    height: 44vw;
+    max-height: 350px;
     background-size: cover;
-    background-attachment: fixed;
-    width: 90%;
-    max-width: 430px;
-    min-width: 380px;
-    height: 460px;
-    max-height: 460px;
-    min-height: 480px;
+    background-position: center center;
     margin: auto;
+    border-radius: 15px;
+    border: 0.4px solid rgba(99, 0, 228, 0.753);
+    box-shadow: 0px 1px 5px black inset;
 }
 
-/*************************/
+main > article > div#comercial
+{
+    width: 95%;
+    max-width: 750px;
+    height: 24vw;
+    max-height: 150px;
+    background-color: lightgray;
+    margin: 15px auto;
+    border-radius: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
 
-footer
+main > article > div#comercial > p
 {
     position: relative;
-    background-color: black;
-    color: white;
-    top: 35.7%;
+    top: 50px;
+    
+}
+
+main > article > div#comercial > p > strong
+{
+    color: #440080;
 }
