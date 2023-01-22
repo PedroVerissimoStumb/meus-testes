@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+header
+{
+    position: relative;
+    width: 100%;
+    height: 30vw;
+    min-height: 165px;
+    max-height: 300px;
+    background-color: #D90B17;
+}
+
+header > div.box-color-yellow
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    background-color: #FFCF47;
+    border-radius: 15px;
+}
+
+header > div.box-color-yellow > div.circle-image
+{
+    position: absolute;
+    background-image: url('../media/logo-horfruit.png');
+    background-position: center center;
+    background-size: contain;
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main > section#contato
+{
+    margin: 10px;
+    padding: 5px;
+}
+
+main > section#contato > div.conjunt
+{
+    margin: auto;
+    width: 455px;
+}
+
+main > section#contato > div.conjunt > span
+{
+    position: relative;
+    bottom: 13.5px;
+    margin: 0px 0px 0px 5px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    transition: .8s;
+    cursor: pointer;
+}
+
+main > section#contato > div.conjunt > span:hover
+{
+    color: rgb(0, 177, 0);
+    transition: .8s;
+}
+
+main > section#contato > div.conjunt > a.click-aqui
+{
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+main > section#contato > div.conjunt > a.click-aqui:hover
+{
+    text-decoration: none;
+}
+
+main > section#pesquisa
+{
+    margin: 10px;
+    padding: 5px;
+}
+
+main > section#pesquisa > input
+{
+    margin: 0px 0px 0px 50%;
+    transform: translate(-50%, 0px);
+    border: 1.4px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    width: 150px;
+    height: 30px;
+}
