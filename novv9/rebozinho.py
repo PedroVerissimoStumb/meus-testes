@@ -1,9 +1,13 @@
-import keyboard
+import pyautogui
 
-valor1 = 11
-valor2 = 90
+pyautogui.alert('Não mexa no computador enquanto seu programa mexe no seu dispositivo')
+pyautogui.PAUSE = 0.9
 
-result = valor1 + valor2
-
-keyboard.write('{} é o resultado de minha conta feita diretamento em python' result, delay=0.2)
-keyboard.press('enter')
+pyautogui.press('winleft')
+pyautogui.write('chrome')
+pyautogui.press('enter')
+pyautogui.moveTo(437, 462, duration=1)
+pyautogui.press('tab')
+pyautogui.press('enter')
+pyautogui.write('https://web.whatsapp.com/')
+pyautogui.press('enter')
