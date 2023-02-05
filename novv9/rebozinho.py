@@ -1,13 +1,20 @@
-import pyautogui
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
-pyautogui.alert('Não mexa no computador enquanto seu programa mexe no seu dispositivo')
-pyautogui.PAUSE = 0.9
+# Iniciar o navegador
+driver = webdriver.Firefox()
 
-pyautogui.press('winleft')
-pyautogui.write('chrome')
-pyautogui.press('enter')
-pyautogui.moveTo(437, 462, duration=1)
-pyautogui.press('tab')
-pyautogui.press('enter')
-pyautogui.write('https://web.whatsapp.com/')
-pyautogui.press('enter')
+# Ir para o Google
+driver.get("http://www.google.com")
+
+# Encontrar o campo de pesquisa
+search_field = driver.find_element.__name__('q')
+
+# Digitar "Globo" na pesquisa
+search_field.send_keys("Globo")
+
+# Enviar a pesquisa
+search_field.send_keys(Keys.RETURN)
+
+# Fechar o navegador
+driver.quit()
