@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo/style.css">
+        <title>Login - Formulário</title>
+    </head>
+    <body>
+        <form action="formulario.php">
+            <legend><h1>Login</h1></legend>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" placeholder="Seu email aqui" required>
+            <br>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" minlength="8" placeholder="Sua senha aqui" required>
+            <br>
+            <input type="submit" value="Entrar" class="entrar">
+        </form>
+    </body>
+</html>

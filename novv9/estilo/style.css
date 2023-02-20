@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+body
+{
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+form
+{
+    background-color: rgb(74, 74, 74);
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    top: 50vh;
+    max-width: 700px;
+    margin: auto;
+    transform: translate(0px, -50%);
+}
+
+form > legend
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+form > input
+{
+    background-color: rgb(107, 107, 107);
+    height: 20px;
+    margin: 0px 3.5px 3.5px 3.5px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+form > input::placeholder
+{
+    color: rgba(255, 255, 255, 0.618);
+}
+
+.entrar
+{
+    color: white;
+    width: 85px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+.entrar:hover
+{
+    border-radius: 5px solid rgba(0, 129, 221, 0.984);
+    transition: 0.8s;
+    color: rgb(0, 153, 255);
+    text-shadow: ;
+}

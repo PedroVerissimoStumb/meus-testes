@@ -1,0 +1,1 @@
+O luan e Pedro, ambos não sabem PHP!
