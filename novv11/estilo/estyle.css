@@ -59,8 +59,8 @@ header > p > small
 
 body > main
 {
-    width: 80%;
-    max-width: 800px;
+    width: 100%;
+    max-width: 650px;
     background-color: rgb(216, 216, 216);
     margin: auto;
     border-radius: 0px 0px 20px 20px;
