@@ -4,6 +4,7 @@ section#design-de-unhas
     height: 100%;
     max-width: 1000px;
     margin: auto auto 50px auto;
+
 }
 
 section#design-de-unhas > h1
@@ -58,4 +59,18 @@ section#design-de-unhas > a.botao > span
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+section#design-de-unhas > div#video-1
+{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+section#design-de-unhas > div#video-1 > video
+{
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 3.5px 3.5px 7.5px rgba(0, 0, 0, 0.798);
 }
