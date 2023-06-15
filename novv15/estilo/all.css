@@ -1,0 +1,472 @@
+@charset "UTF=8";
+@font-face
+{
+    font-family: Rye;
+    src: url('../font/Rye/Rye-Regular.ttf');
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html
+{
+    width: 100%;
+    height: 100%;
+}
+
+body
+{
+    background-color: #1e1e1e;
+    color: white;
+}
+
+header
+{
+    background-image: linear-gradient(180deg, black, transparent);
+}
+
+header > div.logo
+{
+    width: 100%;
+    display: block;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    filter: drop-shadow(0px 0px 5px rgba(255, 253, 134, 0.732));
+    background-image: url('../midia/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header > p
+{
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Rye;
+    position: relative;
+    bottom: 30px;
+}
+
+header > nav
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 18px;
+    background-image: linear-gradient(90deg, black, transparent, black);
+}
+
+header > nav > ul
+{
+    border: 1px solid black;
+    padding: 5px 0px;
+}
+
+header > nav > ul > li
+{
+    display: inline;
+}
+
+header > nav > ul > li > a
+{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Rye, cursive;
+    padding: 0px 10px;
+    transition: .3s;
+}
+
+header > nav > ul > li > a:hover
+{
+    transition: .6s;
+    font-size: 18px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.778);
+}
+
+header > div.social
+{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+header > div.social div
+{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 15px;
+}
+
+header > div.social div.facebook
+{
+    background-color: transparent;
+    background-image: url('../midia/facebook.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 5px #ffffff8d);
+    cursor: pointer;
+    transition: .3s;
+}
+
+header > div.social div.facebook:hover
+{
+    background-image: url('../midia/facebook-hover.png');
+    width: 65px;
+    height: 65px;
+    transition: .6s;
+    filter: drop-shadow(0px 0px 15px #4395ffd6);
+    transform: translateY(8px);
+}
+
+header > div.social div.instagram
+{
+    background-color: transparent;
+    background-image: url('../midia/instagram.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 5px #ffffff8d);
+    cursor: pointer;
+    transition: .3s;
+}
+
+header > div.social div.instagram:hover
+{
+    background-image: url('../midia/instagram-hover.png');
+    width: 65px;
+    height: 65px;
+    transition: .6s;
+    filter: drop-shadow(0px 0px 15px #fc43ffd6);
+    transform: translateY(8px);
+}
+
+header > div.social div.youtube
+{
+    background-color: transparent;
+    background-image: url('../midia/youtube.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 5px #ffffff8d);
+    cursor: pointer;
+    transition: .3s;
+}
+
+header > div.social div.youtube:hover
+{
+    background-image: url('../midia/youtube-hover.png');
+    width: 65px;
+    height: 65px;
+    transition: .6s;
+    filter: drop-shadow(0px 0px 15px #ff4343d6);
+    transform: translateY(8px);
+}
+
+div.line
+{
+    width: 100%;
+    height: 5px;
+    background-color: #ffff28;
+    box-shadow: 0px 0px 10px #ffff28;
+}
+
+article
+{
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    background-color: black;
+    border-radius: 20px;
+    border: 2.5px solid #ffff28;
+    box-shadow: 0px 0px 20px #ffff28;
+    margin: 18px auto;
+    padding: 13px;
+}
+
+article > section > div.block-one
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+article > section > div.block-one > p
+{
+    font-size: 20px;
+    font-family: 'Open Sans','Calibri','Lucida Grande',sans-serif;
+    font-style: italic;
+    text-align: end;
+    padding-right: 10px;
+}
+
+article > section > div.block-one > p > strong
+{
+    text-decoration: underline;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.663);
+}
+
+/********************************************************/
+
+article > section > div.sobre
+{
+    width: 100%;
+}
+
+article > section > div.sobre > h2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 30px;
+    margin-top: 25px;
+    background-image: linear-gradient(90deg, gold, transparent);
+    text-shadow: 0px 0px 2.5px black;
+    border-radius: 20px 0px 0px 20px;
+    padding: 3.5px 3.5px 3.5px 10px;
+}
+
+article > section div.sobre > p
+{
+    font-family: 'Open Sans','Calibri','Lucida Grande',sans-serif;
+    font-size: 25px;
+    margin: 10px;
+}
+
+/********************************************************/
+
+article > section > div.tattos
+{
+    width: 100%;
+}
+
+article > section > div.tattos > h2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 30px;
+    margin-top: 25px;
+    text-shadow: 0px 0px 2.5px black;
+    background-image: linear-gradient(90deg, gold, transparent);
+    border-radius: 20px 0px 0px 20px;
+    padding: 3.5px 3.5px 3.5px 10px;
+}
+
+article > section div.tattos > p
+{
+    font-family: 'Open Sans','Calibri','Lucida Grande',sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+/********************************************************/
+
+.kodfun-galeri
+{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.kodfun-galeri > div
+{
+    flex: 1;
+    border-radius: 1rem;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .5s;
+}
+
+.kodfun-galeri > div:hover
+{
+    flex: 5;
+    transition: .5s;
+    background-size: cover;
+}
+
+br
+{
+    display: block;
+}
+
+/********************************************************/
+
+div.button
+{
+    width: 100%;
+}
+
+.fancy
+{
+    background-color: transparent;
+    border: 2px solid #8e8e8ed6;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #ffff28;
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 15px auto 10px auto;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+    width: 295px;
+}
+   
+.fancy::before
+{
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: #ffff28;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+}
+   
+.fancy .text
+{
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffff28;
+    text-shadow: 0px 0px 5px white;
+}
+   
+.fancy .top-key
+{
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+   
+.fancy .bottom-key-1
+{
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+   
+.fancy .bottom-key-2
+{
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+   
+.fancy:hover
+{
+    color: white;
+    background: black;
+}
+   
+.fancy:hover::before
+{
+    width: 0.9375rem;
+    background: white;
+}
+   
+.fancy:hover .text
+{
+    color: white;
+    padding-left: 1.5em;
+}
+   
+.fancy:hover .top-key
+{
+    left: -2px;
+    width: 0px;
+}
+   
+.fancy:hover .bottom-key-1, .fancy:hover .bottom-key-2
+{
+    right: 0;
+    width: 0;
+}
+
+footer
+{
+    display: block;
+    background-color: black;
+    padding: 10px;
+}
+
+footer > p
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 850px)
+{
+    .kodfun-galeri
+    {
+        display: none;
+    }
+
+    .kodfun-galeri-two
+    {
+        display: flex;
+        height: 20rem;
+        gap: 1rem;
+        margin: 20px auto;
+    }
+
+    .kodfun-galeri-two > div
+    {
+        flex: 1;
+        border-radius: 1rem;
+        background-color: transparent;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .5s;
+    }
+
+    .kodfun-galeri-two > div:hover
+    {
+        flex: 5;
+        transition: .5s;
+        background-size: cover;
+    }
+}
