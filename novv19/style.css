@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151320;
+}
+
+div.container
+{
+    position: relative;
+    background-color: #444;
+    color: #fff;
+    width: 85%;
+    max-width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+}
+
+div.container > h1
+{
+    font: bold 2em 'Century Gothic';
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.793);
+}
+
+div.container::before, div.container::after
+{
+    content: '';
+    position: absolute;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    z-index: -1;
+    border-radius: 13px;
+    background-size: 300%;
+    background-image: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    animation: bordas 8s linear alternate infinite;
+}
+
+@keyframes bordas
+{
+    0%
+    {
+        background-position: 0;
+    }
+    100%
+    {
+        background-position: 300%;
+    }
+}
+
+div.container::after
+{
+    filter: blur(50px);
+}
+
+a:hover
+{
+    text-shadow: 0px 0px 20px rgba(255, 192, 203, 0.798);
+    transition: .8s;
+    text-decoration: none;
+}
